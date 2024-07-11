@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <divc class="container">
+        <label for="cantidad"> Pesos en CLP: </label>
+        <input type="number" id="cantidad" class="imput_number" placeholder="Ingresa la cantidad en CLP">
+
+        <label for="cambio">Convertir A:</label>
+        <select name="cambio" id="cambio">
+            <option value="dolar">Dolar</option>
+            <option value="utm">Unidad Tributaria Mensual</option>
+            <option value="uf">Unidad de Fomento</option>
+            <option value="euro">Euro</option>
+            <option value="bitcoin">Bitcoin</option>
+        </select>
+        <button type="button" class="btn" id="btn">Calcular</button>
+        
+    </div>
+    <div id="resultado" class="resultado inactivo">
+        <span id="respuesta"></span>
+        <div id="grafico" class="grafico">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+    
+    <script src="./asset/js/index.js"></script>
+</body>
+</html>
